@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine reminder</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <body>
+	<main class="app">
+		
+		<section class="greeting">
+			<h2 class="title">
+                <img src="image.gif" alt="HTML5 Icon" width="128" height="128">
+				Hello, <input type="text" id="name" placeholder="Your Name here" />
+			</h2>
+		</section>
+		
+		
+		<!-- add medicine -->
+		<section class="add-medicine">
+			<h3>Add Medicine</h3>
+			<form id="new-medicine-form">
+				
+				<input type="text" placeholder="Type here medicine name" name="content" id="content" />
+					
+				<h4>Pick dose time</h4>
+				<div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="morning" /> 
+						<span class="bubble morning"></span>
+						<div>Morning</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="Night" />
+						<span class="bubble Night"></span>
+						<div>Night</div>
+					</label>
+				</div>
+
+				<input type="submit" value="Add medicine"/>
+			</form>
+		</section>
+		
+
+		
+		<section class="medicine-list">
+			<h3>Medicine list</h3>
+			<div class="list" id="medicine-list"></div>
+		</section>
+		
+
+	</main>
+	<script src="index.js"></script>
+	
+	
+</body>
+</html>
